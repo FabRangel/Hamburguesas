@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>hamburguesa</servlet-name>
+        <servlet-class>Controller.hamburguesa</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>verifyHamburguesa</servlet-name>
+        <servlet-class>Controller.verifyHamburguesa</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>toDB</servlet-name>
+        <servlet-class>Controller.toDB</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>limpiarCookies</servlet-name>
+        <servlet-class>Controller.limpiarCookies</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>hamburguesa</servlet-name>
+        <url-pattern>/hamburguesa</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>verifyHamburguesa</servlet-name>
+        <url-pattern>/verifyHamburguesa</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>toDB</servlet-name>
+        <url-pattern>/toDB</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>limpiarCookies</servlet-name>
+        <url-pattern>/limpiarCookies</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
